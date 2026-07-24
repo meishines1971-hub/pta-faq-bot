@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>明新小学校PTA よくある質問チャット</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo-dot"></span>
+      <h1>明新小学校PTA <span class="sub">よくある質問チャット</span></h1>
+    </div>
+  </header>
+
+  <main class="chat-shell">
+    <div class="chat-window" id="chatWindow">
+      <div class="msg bot">
+        <p>こんにちは。PTAに関するご質問にお答えします。知りたいことを入力するか、下のよくある質問から選んでください。</p>
+      </div>
+      <div class="quick-replies" id="quickReplies"></div>
+    </div>
+
+    <form class="chat-input-row" id="chatForm" autocomplete="off">
+      <input type="text" id="chatInput" placeholder="例: 体操服リサイクルはいつですか" />
+      <button type="submit">送信</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>回答が見つからない場合は <a id="contactLink" href="#" target="_blank" rel="noopener">意見・お問い合わせフォーム</a> からご連絡ください。</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="search.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
