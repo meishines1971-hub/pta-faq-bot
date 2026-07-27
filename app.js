@@ -44,6 +44,12 @@ function renderFallback(closeGuesses) {
     html += `</ul>`;
   }
   html += `<p>お手数ですが <a href="${CONTACT_FORM_URL}" target="_blank" rel="noopener">意見・お問い合わせフォーム</a> よりご質問ください。</p>`;
+  html += `
+    <div class="qr-block">
+      <a href="${CONTACT_FORM_URL}" target="_blank" rel="noopener" aria-label="意見・お問い合わせフォームをQRコードで開く">${CONTACT_QR_SVG}</a>
+      <p class="qr-caption">スマホでQRコードを読み取っても開けます</p>
+    </div>
+  `;
   return html;
 }
 
